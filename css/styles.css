@@ -1,0 +1,28 @@
+
+/* styles.css - Synapse Fintech */
+:root{
+  --primary:#198754;
+  --card-radius:12px;
+  --max-width:780px;
+}
+body{background: #ffffff; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+.fintech-card{border-radius:var(--card-radius); box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+
+/* logo */
+.logo-img{width:88px; height:auto; display:inline-block; background:transparent;}
+
+/* sidebar */
+.sidebar{min-height:100vh; border-right:1px solid #eee;}
+
+/* responsive adjustments */
+@media(min-width:992px){
+  .fintech-card{max-width:420px;}
+  main.card{margin-top:40px;}
+}
+
+/* inputs */
+.form-label{font-weight:600; font-size:.9rem;}
+.btn-success{background:var(--primary); border-color:var(--primary);}
+
+/* utility */
+.vh-100{min-height:100vh;}

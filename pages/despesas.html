@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Despesas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-dark bg-success px-3">
+  <a class="navbar-brand d-flex align-items-center" href="../index.html">
+    <img src="../img/logo.png" alt="Logo" style="width:36px;margin-right:8px;"> Synapse
+  </a>
+</nav>
+<div class="container mt-4">
+  <div class="card mx-auto p-3 fintech-card" style="max-width:720px;">
+    <h5 class="mb-3">Controle de Despesas</h5>
+    <form>
+      <div class="row">
+        <div class="col-12 col-md-6 mb-2">
+          <label class="form-label">Tipo de conta</label>
+          <select class="form-select">
+            <option>Selecione</option><option>Água</option><option>Luz</option><option>Internet</option><option>Cartão</option><option>Outros</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-6 mb-2">
+          <label class="form-label">Valor mensal (R$)</label>
+          <input type="number" class="form-control" placeholder="150">
+        </div>
+      </div>
+      <div class="d-flex gap-2 mt-3">
+        <button class="btn btn-success">Salvar</button>
+        <button class="btn btn-outline-secondary">Limpar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

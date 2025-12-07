@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Synapse - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white d-flex align-items-center justify-content-center min-vh-100">
+
+  <main class="card shadow-sm p-4 fintech-card" style="width:360px;">
+    <div class="text-center">
+      <img src="img/logo.png" alt="Synapse Logo" class="logo-img mb-3" id="logo">
+    </div>
+    <h4 class="text-center mb-3">Seja bem-vindo ao Synapse</h4>
+
+    <!-- Login form: submits to welcome page (no backend) -->
+    <form action="pages/welcome.html" method="get" novalidate>
+      <div class="mb-3">
+        <label class="form-label">Usuário</label>
+        <input name="usuario" type="text" class="form-control" placeholder="Digite seu usuário" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Senha</label>
+        <input name="senha" type="password" class="form-control" placeholder="Digite sua senha" required>
+      </div>
+
+      <div class="d-grid gap-2 mb-2">
+        <button class="btn btn-success" type="submit">Entrar</button>
+      </div>
+
+      <div class="text-center">
+        <a href="pages/recuperar_senha.html" class="small">Esqueci minha senha</a>
+      </div>
+    </form>
+
+    <p class="mt-3 text-center small">
+      Caso você não possua conta, <a href="pages/cadastro.html" class="link-success">clique aqui</a> para se cadastrar.
+    </p>
+  </main>
+
+</body>
+</html>
